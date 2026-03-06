@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkedIn Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="nav-left">
+        <div class="logo" aria-label="LinkedIn logo">in</div>
+      </div>
+
+      <div class="nav-center">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </div>
+
+      <nav class="nav-right" aria-label="Primary">
+        <a href="#" class="nav-item active">
+          <span class="nav-icon">🏠</span>
+          <span class="nav-label">Home</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">👥</span>
+          <span class="nav-label">Network</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">💼</span>
+          <span class="nav-label">Jobs</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">💬</span>
+          <span class="nav-label">Messaging</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">🔔</span>
+          <span class="nav-label">Notifications</span>
+        </a>
+        <a href="#" class="nav-item">
+          <span class="nav-icon">👤</span>
+          <span class="nav-label">Profile</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar left-sidebar">
+        <section class="card profile-card">
+          <div class="profile-cover"></div>
+          <img
+            src="https://i.pravatar.cc/100?img=12"
+            alt="Profile"
+            class="profile-image"
+          />
+          <h2>Alex Johnson</h2>
+          <p class="title">Web Developer</p>
+          <div class="stats">
+            <div class="stat-row">
+              <span>Profile views</span>
+              <strong>321</strong>
+            </div>
+            <div class="stat-row">
+              <span>Connections</span>
+              <strong>187</strong>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="feed">
+        <article class="card create-post">
+          <h3>Create a post</h3>
+          <textarea
+            id="post-input"
+            placeholder="Share an update with your network..."
+            rows="4"
+          ></textarea>
+          <button id="publish-btn">Publish</button>
+        </article>
+
+        <section id="posts-container" aria-live="polite"></section>
+      </section>
+
+      <aside class="sidebar right-sidebar">
+        <section class="card">
+          <h3>Trending topics</h3>
+          <ul class="trending-list">
+            <li>#WebDevelopment</li>
+            <li>#JavaScript</li>
+            <li>#RemoteWork</li>
+            <li>#UXDesign</li>
+            <li>#OpenToWork</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h3>Suggested connections</h3>
+          <ul class="connections-list">
+            <li>
+              <img src="https://i.pravatar.cc/45?img=33" alt="Taylor" />
+              <div>
+                <strong>Taylor Smith</strong>
+                <p>Frontend Engineer</p>
+              </div>
+              <button>Connect</button>
+            </li>
+            <li>
+              <img src="https://i.pravatar.cc/45?img=45" alt="Morgan" />
+              <div>
+                <strong>Morgan Lee</strong>
+                <p>UI Designer</p>
+              </div>
+              <button>Connect</button>
+            </li>
+            <li>
+              <img src="https://i.pravatar.cc/45?img=52" alt="Jordan" />
+              <div>
+                <strong>Jordan Patel</strong>
+                <p>Product Manager</p>
+              </div>
+              <button>Connect</button>
+            </li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
